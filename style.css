@@ -55,6 +55,10 @@ nav ul li:hover{
     border-bottom: 2px solid darkcyan;
 }
 
+h1{ text-align: center;
+
+}
+
 
 @media screen and ( min-width:600px ) {
     label{
