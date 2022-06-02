@@ -55,8 +55,69 @@ nav ul li:hover{
     border-bottom: 2px solid darkcyan;
 }
 
-h1{ text-align: center;
+.contenedor-layout{
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: "title title title title"
+                         "social photo photo photo"
+                         "about about about about"
+                         "habilities habilities habilities habilities"
+                         "experience experience experience experience"
+                         "portafolio portafolio portafolio portafolio"
+                         "contact contact contact contact";
+    grid-template-columns: 25% auto auto auto;
+    grid-template-rows: auto 330px auto 250px 330px 500px 200px;
+    gap: .5rem;
+    padding: .5rem;
+}
 
+h1{
+    font-size: 50px;
+    text-align: left;
+}
+
+.contenedor-layout div{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    padding: .5rem;
+}
+
+.title{
+    grid-area: title;
+}
+
+.social{
+    grid-area: social;
+}
+
+.photo{
+    grid-area: photo;
+}
+
+.about{
+    grid-area: about;
+}
+
+.habilities{
+    grid-area: habilities;
+}
+
+.experience{
+    grid-area: experience;
+}
+
+.portafolio{
+    grid-area: portafolio;
+}
+
+.contact{
+    grid-area: contact;
 }
 
 
