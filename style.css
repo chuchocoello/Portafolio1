@@ -5,6 +5,13 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+:root{
+    --principal-color:  ;
+    --accent-color:  ;
+    --light-color:  ;
+    --gray:  ;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -46,7 +53,6 @@ input#menu-hamburguesa:checked ~ ul{
 }
 
 nav ul>li{
-    
     border: 2px solid transparent;
 }
 
@@ -78,14 +84,14 @@ h1{
 
 .contenedor-layout div{
     text-align: center;
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     background-color: aquamarine;
     border: 2px solid lightgray;
     border-radius: 10px;
-    padding: .5rem;
+    padding: 1.5rem;
 }
 
 .title{
@@ -102,6 +108,16 @@ h1{
 
 .about{
     grid-area: about;
+    display: inline;
+}
+
+.download{
+    border: 1px solid black;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: white;
+    border-radius: 29px;
+    text-decoration: none;
+    margin: 10px;
 }
 
 .habilities{
