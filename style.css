@@ -120,12 +120,17 @@ background-color: orangered;
 .social a{
     display: flex;
     justify-content: center;
+    align-items: center;
     border: var(--blanco) solid 5px;
     border-radius: 50%;
     height: 70px;
     width: 70px;
     background-color: var(--naranja);
     vertical-align: middle;
+}
+
+a img{
+    height: 60%;
 }
 
 .social a:hover{
