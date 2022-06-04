@@ -6,10 +6,12 @@
 }
 
 :root{
-    --principal-color:  ;
-    --accent-color:  ;
-    --light-color:  ;
-    --gray:  ;
+    --rosita: #fef2f2 ;
+    --naranja: #F26440 ;
+    --verde: #286f6c ;
+    --gray: #adadad ;
+    --blanco: #ffffff;
+    --hueso: #F9F5F2;
 }
 
 nav{
@@ -19,6 +21,7 @@ nav{
     padding: 0.5rem 1.25rem;
     height: 75px;
     box-shadow: 0 10px 20px 10px #ddd;
+    background-color: var(--rosita);
 }
 nav > div > img{
     width: 45px;
@@ -26,11 +29,10 @@ nav > div > img{
 
 input#menu-hamburguesa{
     visibility: hidden;
-    
 }
 
 input#menu-hamburguesa ~ ul{
-    background-color: thistle;
+    background-color: var(--rosita);
     list-style: none;
     position: absolute;
     width: 100%;
@@ -73,29 +75,29 @@ nav ul li:hover{
                          "contact contact contact contact";
     grid-template-columns: 25% auto auto auto;
     grid-template-rows: auto 350px auto 250px 330px 500px 200px;
-    gap: .5rem;
-    padding: .5rem;
 }
 
 h1{
     font-size: 50px;
-    text-align: left;
 }
 
+h2{
+    font-size: 32px;
+    color: var(--verde);
+}
+
+p{
+    font-size: 16px;
+    color: var(--gray);
+}
 .contenedor-layout div{
-    text-align: center;
-    /* display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; */
-    background-color: aquamarine;
-    border: 2px solid lightgray;
-    border-radius: 10px;
-    padding: 1.5rem;
+    /* border: 2px solid lightgray; */
 }
 
 .title{
     grid-area: title;
+    background-color: var(--rosita);
+    padding: 0 0 30px 15px;
 }
 
 .social{
@@ -104,33 +106,61 @@ h1{
     flex-direction: column;
     gap: 1rem;
     align-items: center;
+    background-color: var(--rosita);
 }
 
 .social div{
-display: flex;
 border: lightblue solid 2px;
 border-radius: 50%;
 height: 70px;
 width: 70px;
 background-color: orangered;
-color: white;
+}
+
+.social a{
+    display: flex;
+    justify-content: center;
+    border: var(--blanco) solid 5px;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    background-color: var(--naranja);
+    vertical-align: middle;
+}
+
+.social a:hover{
+    background-color: var(--verde);
 }
 
 .photo{
+    background-color: var(--rosita);
     grid-area: photo;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.photo img{
+    height: 330px;
+    
 }
 
 .about{
-    grid-area: about;
-    display: inline;
-    
+    margin: 20px;
+    grid-area: about; 
 }
 
 .download{
     padding: 1rem 2rem 1rem 2rem;
-    background-color: white;
+    background-color: var(--naranja);
     border-radius: 29px;
     text-decoration: none;
+    text-align: center;
+    color: var(--blanco);
+}
+
+.download:hover{
+    background-color: var(--verde);
+    color: white;
 }
 
 .habilities{
@@ -150,7 +180,7 @@ color: white;
 }
 
 
-@media screen and ( min-width:600px ) {
+@media screen and ( min-width:785px ) {
     label{
         display: none;
     }
