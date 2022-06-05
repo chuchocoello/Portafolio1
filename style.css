@@ -212,8 +212,8 @@ h2 span{
 }
 
 .habilities .scroller{
-    margin: 20px 0 0 100px;
-    max-width: 80vh;
+    margin: 20px 0 0 90px;
+    max-width: 300px;
     padding: 10px;
     display: grid;
     grid-auto-flow: column;
