@@ -213,7 +213,7 @@ h2 span{
 
 .habilities .scroller{
     margin: 20px 0 0 100px;
-    max-width: 400px;
+    max-width: 80vh;
     padding: 10px;
     display: grid;
     grid-auto-flow: column;
@@ -228,7 +228,7 @@ h2 span{
 .scroller-item{
     position: relative;
     width: 250px;
-    height: 300px;
+    height: 350px;
     background-color: var(--rosita);
     border-radius: 10px;
     padding: 20px;
