@@ -149,8 +149,8 @@ a img{
 }
 
 .photo .circle{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     background-color: var(--verde);
     border-radius: 50%;
     position: absolute;
