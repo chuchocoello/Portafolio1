@@ -144,13 +144,13 @@ a img{
 }
 
 .photo img{
-    height: 330px;
+    height: 270px;
     position: absolute;
 }
 
 .photo .circle{
-    height: 150px;
-    width: 150px;
+    height: 190px;
+    width: 190px;
     background-color: var(--verde);
     border-radius: 50%;
     position: absolute;
