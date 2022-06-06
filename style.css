@@ -149,8 +149,8 @@ a img{
 }
 
 .photo .circle{
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     background-color: var(--verde);
     border-radius: 50%;
     position: absolute;
@@ -246,6 +246,17 @@ h2 span{
     .scroller{
         max-width: 50vmax;
     }
+
+    .photo .circle{
+        height: 250px;
+        width: 250px;
+        background-color: var(--verde);
+        border-radius: 50%;
+        position: absolute;
+        bottom: 130px;
+        left: 30%;
+    }
+    
 
 }
 
