@@ -75,7 +75,7 @@ nav ul li:hover{
                          "portafolio portafolio portafolio portafolio"
                          "contact contact contact contact";
     grid-template-columns: 25% auto auto auto;
-    grid-template-rows: auto 350px 350px auto 330px 500px 200px;
+    grid-template-rows: auto 350px auto auto 330px 500px 200px;
 }
 
 h1{
@@ -108,11 +108,11 @@ p{
 }
 
 .social div{
-border: lightblue solid 2px;
-border-radius: 50%;
-height: 70px;
-width: 70px;
-background-color: orangered;
+    border: lightblue solid 2px;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    background-color: orangered;
 }
 
 .social a{
@@ -140,6 +140,7 @@ a img{
     grid-area: photo;
     padding-top: 20px;
     padding-left: 10%;
+    position: relative;
 }
 
 .photo img{
@@ -154,25 +155,12 @@ a img{
     border-radius: 50%;
     position: absolute;
     bottom: 130px;
-    left: 50%;
+    left: 30%;
 }
 
 .about{
     margin: 20px;
     grid-area: about; 
-}
-
-.download{
-    padding: 1rem 2rem 1rem 2rem;
-    background-color: var(--naranja);
-    border-radius: 29px;
-    text-decoration: none;
-    color: var(--blanco);
-}
-
-.download:hover{
-    background-color: var(--verde);
-    color: white;
 }
 
 .habilities{
@@ -211,14 +199,14 @@ h2 span{
     left: 28px;
 }
 
-.habilities .scroller{
-    margin: 20px 0 0 90px;
-    max-width: 300px;
+.scroller{
+    margin: 20px 0 0 100px;
+    max-width: 60vmax;
     padding: 10px;
     display: grid;
     grid-auto-flow: column;
     column-gap: 1rem;
-    overflow-x: auto;
+    overflow-x: scroll;
 }
 
 .scroller::-webkit-scrollbar{
@@ -228,7 +216,7 @@ h2 span{
 .scroller-item{
     position: relative;
     width: 250px;
-    height: 350px;
+    min-height: 350px;
     background-color: var(--rosita);
     border-radius: 10px;
     padding: 20px;
@@ -240,13 +228,9 @@ h2 span{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: calc(100% + 15px);
-    height: calc(100% + 15px);
+    /* width: calc(100% + 15px);
+    height: calc(100% + 15px); */
     z-index: -1;
-}
-
-.experience{
-    grid-area: experience;
 }
 
 .portafolio{
@@ -257,6 +241,13 @@ h2 span{
     grid-area: contact;
 }
 
+@media screen and ( min-width:580px ) {
+
+    .scroller{
+        max-width: 70vmax;
+    }
+
+}
 
 @media screen and ( min-width:785px ) {
     label{
@@ -272,6 +263,10 @@ h2 span{
         justify-content: flex-end;
         border-radius: 0 0 0 0;
         box-shadow: 0 0 0 0;
+    }
+
+    .scroller{
+        max-width: 80vmax;
     }
 }
 
