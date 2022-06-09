@@ -75,7 +75,7 @@ nav ul li:hover{
                          "portafolio portafolio portafolio portafolio"
                          "contact contact contact contact";
     grid-template-columns: 25% auto auto auto;
-    grid-template-rows: auto 350px auto auto auto 500px 200px;
+    grid-template-rows: auto 350px auto auto auto auto 200px;
     overflow-x: hidden;
 }
 
@@ -225,6 +225,10 @@ h2 span{
     padding: 20px;
 }
 
+.scroller-item:last-child{
+    margin-right: 80px;
+}
+
 .scroller-item::before{
     content: '';
     position: absolute;
@@ -236,27 +240,93 @@ h2 span{
     z-index: -1;
 }
 
-.experience h2{
-    margin-left: 20px;
-
+.experience{
+    grid-area: experience;
+    width: 100vw;
+    padding-right: 5vw;
 }
 
-.experience div{
+.experience h2{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+div .exp-container{
     margin: 30px;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
-    gap: 20px;
-    
+    gap: 15px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .exp-container img{
-    width: 100px;
+    width: 70px;
+}
 
+.exp-container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.exp-container h3{
+    width: 100%;
+}
+
+div .cuadroVerde{
+    width: 100%;
+    background-color: var(--verde);
+    height: 500px;
+    position: absolute;
+    z-index: -1;
+    top: 1740px;
 }
 
 .portafolio{
     grid-area: portafolio;
+    /* margin-top: 15px; */
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.portafolio h2{
+    color: var(--blanco);
+}
+
+.portafolio p{
+    color: var(--blanco);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.portafolio div{
+    background-color: var(--blanco);
+    border-radius: 15px;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px var(--gray);
+}
+
+.portafolio img{
+    width: vw;
+    max-width: 200px;
+    margin-bottom: 15px;
+}
+
+.portafolio h3{
+    text-align: left;
 }
 
 .contact{
