@@ -167,7 +167,7 @@ a img{
 
 .habilities{
     grid-area: habilities;
-    padding-left: 20px;
+    padding-left: 3vmax;
     position: relative;
 }
 
@@ -244,6 +244,7 @@ h2 span{
     grid-area: experience;
     width: 100vw;
     padding-right: 5vw;
+    
 }
 
 .experience h2{
@@ -280,7 +281,7 @@ div .exp-container{
 div .cuadroVerde{
     width: 100%;
     background-color: var(--verde);
-    height: 500px;
+    height: 850px;
     position: absolute;
     z-index: -1;
     top: 1740px;
@@ -288,8 +289,8 @@ div .cuadroVerde{
 
 .portafolio{
     grid-area: portafolio;
-    /* margin-top: 15px; */
-    width: 100vw;
+    margin-top: 15px;
+    width: 96vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -300,12 +301,14 @@ div .cuadroVerde{
 
 .portafolio h2{
     color: var(--blanco);
+    text-align: left;
 }
 
 .portafolio p{
     color: var(--blanco);
-    text-align: center;
+    text-align: left;
     margin-bottom: 10px;
+    ;
 }
 
 .portafolio div{
@@ -320,8 +323,7 @@ div .cuadroVerde{
 }
 
 .portafolio img{
-    width: vw;
-    max-width: 200px;
+    width: 100%;
     margin-bottom: 15px;
 }
 
@@ -331,6 +333,28 @@ div .cuadroVerde{
 
 .contact{
     grid-area: contact;
+    margin-top: 40px;
+}
+
+div .contact{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+}
+
+div.cel{
+    display: flex;
+    flex-direction: column;
+}
+
+.circuloNaranja{
+    background-color: #F26440;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    padding: 10px;
 }
 
 @media screen and ( min-width:450px ) {
@@ -344,10 +368,6 @@ div .cuadroVerde{
     bottom: 130px;
     left: 30%;
 }
-}
-
-@media screen and ( min-width:580px ) {
-
 }
 
 @media screen and ( min-width:785px ) {
@@ -369,5 +389,24 @@ div .cuadroVerde{
     .scroller{
         max-width: 80vmax;
     }
+
+    .portafolio{
+        flex-direction: row;
+    }
+    .portafolio section{
+        max-width: 35vw;
+    }
+
+    div .cuadroVerde{
+        top: 1640px;
+        height: 22vw;
+    }
+
+    .photo img{
+        height: 330px;
+        position: absolute;
+        left: 20%;
+    }
+
 }
 
