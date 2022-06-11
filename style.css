@@ -75,7 +75,7 @@ nav ul li:hover{
                          "portafolio portafolio portafolio portafolio"
                          "contact contact contact contact";
     grid-template-columns: 25% auto auto auto;
-    grid-template-rows: auto 350px auto auto auto auto 200px;
+    grid-template-rows: auto 350px auto auto auto auto auto;
     overflow-x: hidden;
 }
 
@@ -281,7 +281,7 @@ div .exp-container{
 div .cuadroVerde{
     width: 100%;
     background-color: var(--verde);
-    height: 850px;
+    height: 740px;
     position: absolute;
     z-index: -1;
     top: 1740px;
@@ -333,27 +333,38 @@ div .cuadroVerde{
 
 .contact{
     grid-area: contact;
-    margin-top: 40px;
+    margin-top: 100px;
+
 }
 
-div .contact{
+.contact-box{
     display: flex;
     justify-content: center;
-    gap: 30px;
-    
+    gap: 2rem;
+    padding-right: 16vw;
+
 }
 
-div.cel{
+.contact h2{
+    padding-left: 19px;
+}
+
+div .cel{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
 }
 
 .circuloNaranja{
     background-color: #F26440;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
 }
 
@@ -368,6 +379,8 @@ div.cel{
     bottom: 130px;
     left: 30%;
 }
+
+
 }
 
 @media screen and ( min-width:785px ) {
@@ -406,6 +419,14 @@ div.cel{
         height: 330px;
         position: absolute;
         left: 20%;
+    }
+
+    .contact-box{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding-right: 0;
+    
     }
 
 }
