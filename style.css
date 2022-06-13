@@ -59,6 +59,11 @@ nav ul>li{
     border: 2px solid transparent;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 nav ul li:hover{
     cursor: pointer;
     border-bottom: 2px solid darkcyan;
@@ -334,6 +339,7 @@ div .cuadroVerde{
 .contact{
     grid-area: contact;
     margin-top: 100px;
+    margin-bottom: 50px;
 
 }
 
@@ -406,6 +412,7 @@ div .cel{
     .portafolio{
         flex-direction: row;
     }
+
     .portafolio section{
         max-width: 35vw;
     }
@@ -426,8 +433,28 @@ div .cel{
         justify-content: center;
         gap: 2rem;
         padding-right: 0;
-    
     }
+
+    .greenCircle{
+        height: 170px;
+        width: 170px;
+        background-color: var(--verde);
+        border-radius: 50%;
+        position: absolute;
+        top: -25px;
+        left: -60px;
+    }
+
+    .orangeCircle{
+        height: 85px;
+        width: 85px;
+        background-color: var(--naranja);
+        border-radius: 50%;
+        position: absolute;
+        top: 70px;
+        left: 28px;
+    }
+    
 
 }
 
